@@ -29,7 +29,7 @@ public class DeleteLines
 		upper--;
 		string[] lines = File.ReadAllLines(args[0]);
 		
-		Console.WriteLine("lower: " + lower + " | upper: " + upper);
+		//Console.WriteLine("lower: " + lower + " | upper: " + upper);
 		StreamWriter file = new StreamWriter("edited" + args[0]);
 		//f = new File(args[0]);
 		
@@ -37,7 +37,7 @@ public class DeleteLines
 		
 		for(int i = 0; i < lines.Length; ++i)
 		{
-			Console.WriteLine("i: " + i);
+			//Console.WriteLine("i: " + i);
 			if(i >= lower && i <= upper)
 			{
 				
@@ -45,7 +45,7 @@ public class DeleteLines
 			else
 			{
 				//Console.WriteLine("innen mit i = " + i);
-				Console.WriteLine(lines[i]);
+				//Console.WriteLine(lines[i]);
 				
 				text += lines[i];
 				text += Environment.NewLine;
